@@ -64,5 +64,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [WebRTC](https://webrtc.org/)
 - [Socket.io](https://socket.io/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-```
-
