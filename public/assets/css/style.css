@@ -194,3 +194,7 @@ video {
     margin-bottom: 132px;
     display: none;
 }
+
+.participant-name {
+    text-align: center;
+}

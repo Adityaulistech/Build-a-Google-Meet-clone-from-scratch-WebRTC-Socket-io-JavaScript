@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
 
         userConnections.push({
             connectionId: socket.id,
-            user_Id: data.displayName,
+            user_id: data.displayName,
             meeting_id: data.meetingid,
         });
 
@@ -43,7 +43,7 @@ io.on("connection", (socket) => {
             });
         });
 
-        socket.emit("inform_me_about_other_user", other_users)
+        socket.emit("inform_me_about_other_user", other_users);
     });
 
     socket.on("SDPProcess", (data) => {

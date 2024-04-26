@@ -371,6 +371,7 @@ var MyApp = (function () {
 
         $("#meetingContainer").show();
         $("#me h2").text(user_id + "(Me)");
+
         document.title = user_id;
 
         event_process_for_signaling_server();
@@ -392,7 +393,7 @@ var MyApp = (function () {
                 AppProcess.init(SDP_function, socket.id);
                 if (user_id != "" && meeting_id != "") {
                     socket.emit("userconnect", {
-                        dsiplayName: user_id,
+                        displayName: user_id,
                         meetingid: meeting_id,
                     });
                 }
@@ -400,6 +401,7 @@ var MyApp = (function () {
         });
 
         socket.on("inform_others_about_me", function (data) {
+            console.log(data.other_user_id);
             addUser(data.other_user_id, data.connId, data.userNumber);
             AppProcess.setNewConnection(data.connId);
         });
@@ -476,6 +478,8 @@ var MyApp = (function () {
         newDivId.find("video").attr("id", "v_" + connId);
         newDivId.find("audio").attr("id", "a_" + connId);
         newDivId.show();
+        console.log("connID- " + connId);
+        console.log("other_user_id- " + other_user_id);
         $("#divUsers").append(newDivId);
         $(".in-call-wrap-up").append(
             '<div class="in-call-wrap d-flex justify-content-between align-items-center mb-3" id="participant_' +
