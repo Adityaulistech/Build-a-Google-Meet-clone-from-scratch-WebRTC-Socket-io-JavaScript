@@ -1,3 +1,5 @@
+/* css/style.css */
+
 body {
     font-family: robot, lato !important;
     font-size: large;
@@ -186,7 +188,6 @@ video {
     font-size: 14px;
     padding-left: 10px;
 }
-
 
 .recording-show {
     position: absolute;
