@@ -66,4 +66,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ```
 
-Feel free to adjust or expand this README.md file based on your specific project requirements or additional features you may want to include!
